@@ -132,14 +132,14 @@ body {
     background-color: var(--accent-color);
     top: 0px;
     bottom: 0px;
-    opacity: 0;
+    /* opacity: 0; */
 
     /* scale: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms,
      scale 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms; */
 }
 .main-pages-link:hover::after {
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 
