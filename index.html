@@ -21,8 +21,8 @@
               <li class="list list-pages">
                 <a href="./index.html" class="main-pages-link link current">Студия</a></li>
               <li class="list list-pages">
-                <a href="./portfolio.html" class="main-pages-link link">Портфолио</a></li>
-              <li class="list list-pages"><a href="" class="main-pages-link link">Контакты</a></li>
+                <a href="./portfolio.html" class="main-pages-link decoration-changes link">Портфолио</a></li>
+              <li class="list list-pages"><a href="" class="main-pages-link decoration-changes link">Контакты</a></li>
             </ul>
         </nav>    
             <ul class="first-adress-text"> 
@@ -49,7 +49,7 @@
        <section class="hero banner">
          <div class="container">
          <h1 class="headline">Эффективные решения для вашего бизнеса</h1>
-         <button type="button" class="modal-btn"><span class="text-btn">Заказать услугу</span></button>
+         <button type="button" class="modal-btn"><span class="text-btn" data-modal-open>Заказать услугу</span></button>
         </div>
        </section>
 
@@ -105,13 +105,22 @@
            <ul class="images-of-work">
                <li class="list works">
                    <img src="./images/main-work/1work-with-computer.jpg" alt="работа с компьютером" width="370" height="294">
-               </li>
+                  <div class="our-products">
+                     <p class="products-text">Десктопные приложения</p>
+                  </div>                  
+                  </li>
                <li class="list works">
                    <img src="./images/main-work/2work-with-mobile.jpg" alt="работа с разными гаджетами" width="370" height="294">
-               </li>
+                   <div class="our-products">
+                     <p class="products-text">Мобильные приложения</p>
+                     </div>   
+                  </li>
                <li class="list works">
                    <img src="./images/main-work/3work-with-color.jpg" alt="работа с цветом" width="370" height="294">
-               </li>
+                   <div class="our-products">
+                     <p class="products-text">Дизайнерские решения</p> 
+                    </div>   
+                </li>
            </ul>
           </div>
         </section>
@@ -381,6 +390,18 @@
     </div>
     </div>
   </div> 
-  </footer>    
+  </footer> 
+  <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop-modal">
+     <button type="button" data-modal-close>
+      <svg class="symbol-close">
+        <use href="./images/symbol-defs.svg#icon-close-symbol">
+        </use>
+      </svg>
+    </button>
+  </div>
+  </div>   
+
+  <script src="./js/modal.js"></script>
 </body>
 </html>
