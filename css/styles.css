@@ -170,10 +170,15 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;    
 }
 
-
+.for-contacts:hover .phone,
+.for-contacts:focus .phone{
+    animation-name: heartBeat;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+}
 
 /* icon */
 .email,
@@ -181,18 +186,22 @@ body {
     display: flex;
     align-items: center; 
 }
+.phone:hover,
+.phone:focus {
+    color: var(--accent-color);
+} 
 
 .icon-contacts-letter,
 .icon-contacts-smartphone{  
     fill: currentColor;
 }
 
-.letter:focus,
+/* .letter:focus,
 .letter:hover,
 .smartphone:hover,
 .smartphone:focus {
     fill:currentColor;
-}
+} */
 .icon-contacts-letter {
     height: 12px;
     width: 16px;
@@ -371,8 +380,7 @@ body {
 }
 .works:focus .our-products,
 .works:hover .our-products{
-    transform: scaleY(1.1);
-    
+    transform: scaleY(1.1);   
 }
 .products-text {
     font-weight: var(--font-weight-variable);
