@@ -196,12 +196,7 @@ body {
     fill: currentColor;
 }
 
-/* .letter:focus,
-.letter:hover,
-.smartphone:hover,
-.smartphone:focus {
-    fill:currentColor;
-} */
+
 .icon-contacts-letter {
     height: 12px;
     width: 16px;
